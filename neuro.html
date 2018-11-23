@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>neurology</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="intro.css">
+	<style>
+		#neurohead{
+			font-family: "Josefin Sans";
+			color: #39b54a;
+		}
+
+		#neuropara{
+			font-size: 16px;
+		}
+
+		.grid-container {
+			display: grid;
+ 			grid-template-columns: auto auto auto;
+ 			grid-gap: 10px;
+ 			background-color: #39b54a;
+ 			padding: 10px;
+		}
+		.grid-container>div {
+  			background-color: rgba(255, 255, 255,1);
+			text-align: center ;
+ 			padding:25px;
+ 			font-size: 16px;
+		}
+
+		#more1{
+			display: none;
+		}
+
+		#more2{
+			display: none;
+		}
+
+		#more3{
+			display: none;
+		}
+
+		#more4{
+			display: none;
+		}
+
+		#more5{
+			display: none;
+		}
+
+		#more6{
+			display: none;
+		}
+
+		#myBtn1{
+			color: #ffffff;
+		}
+
+		#myBtn2{
+			color: #ffffff;
+		}
+
+		#myBtn3{
+			color: #ffffff;
+		}
+
+		#myBtn4{
+			color: #ffffff;
+		}
+
+		#myBtn5{
+			color: #ffffff;
+		}
+
+		#myBtn6{
+			color: #ffffff;
+		}
+
+		.column {
+    		float: left;
+   			width: 33.3%;
+    		margin-bottom: 16px;
+    		padding: 20px 8px;
+		}
+
+
+		@media screen and (max-width: 650px) {
+    		.column {
+        		width: 100%;
+        		display: block;
+    		}
+		}
+
+
+		.card {
+    		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+		}
+
+
+		.container {
+    		padding: 0 16px;
+		}
+
+
+		.container::after, .row::after {
+    		content: "";
+    		clear: both;
+    		display: table;
+		}
+
+		.title {
+    		color: grey;
+		}
+
+		.button {
+			background: #39b54a; 
+    	color: #ffffff ;
+    	}
+
+
+
+	</style>
+
+	
+
+
+	<script>
+
+		function readmore1() {
+  		var dots = document.getElementById("dots1");
+  		var moreText = document.getElementById("more1");
+  		var btnText = document.getElementById("myBtn1");
+
+  		if (dots.style.display === "none") {
+    	dots.style.display = "inline";
+    	btnText.innerHTML = "Read more"; 
+    	moreText.style.display = "none";
+  		} else {
+    	dots.style.display = "none";
+    	btnText.innerHTML = "Read less"; 
+    	moreText.style.display = "inline";
+  			}
+		}
+
+		function readmore2() {
+  		var dots = document.getElementById("dots2");
+  		var moreText = document.getElementById("more2");
+  		var btnText = document.getElementById("myBtn2");
+
+  		if (dots.style.display === "none") {
+    	dots.style.display = "inline";
+    	btnText.innerHTML = "Read more"; 
+    	moreText.style.display = "none";
+  		} else {
+    	dots.style.display = "none";
+    	btnText.innerHTML = "Read less"; 
+    	moreText.style.display = "inline";
+  			}
+		}
+
+		function readmore3() {
+  		var dots = document.getElementById("dots3");
+  		var moreText = document.getElementById("more3");
+  		var btnText = document.getElementById("myBtn3");
+
+  		if (dots.style.display === "none") {
+    	dots.style.display = "inline";
+    	btnText.innerHTML = "Read more"; 
+    	moreText.style.display = "none";
+  		} else {
+    	dots.style.display = "none";
+    	btnText.innerHTML = "Read less"; 
+    	moreText.style.display = "inline";
+  			}
+		}
+
+		function readmore4() {
+  		var dots = document.getElementById("dots4");
+  		var moreText = document.getElementById("more4");
+  		var btnText = document.getElementById("myBtn4");
+
+  		if (dots.style.display === "none") {
+    	dots.style.display = "inline";
+    	btnText.innerHTML = "Read more"; 
+    	moreText.style.display = "none";
+  		} else {
+    	dots.style.display = "none";
+    	btnText.innerHTML = "Read less"; 
+    	moreText.style.display = "inline";
+  			}
+		}
+
+		function readmore5() {
+  		var dots = document.getElementById("dots5");
+  		var moreText = document.getElementById("more5");
+  		var btnText = document.getElementById("myBtn5");
+
+  		if (dots.style.display === "none") {
+    	dots.style.display = "inline";
+    	btnText.innerHTML = "Read more"; 
+    	moreText.style.display = "none";
+  		} else {
+    	dots.style.display = "none";
+    	btnText.innerHTML = "Read less"; 
+    	moreText.style.display = "inline";
+  			}
+		}
+
+		function readmore6() {
+  		var dots = document.getElementById("dots6");
+  		var moreText = document.getElementById("more6");
+  		var btnText = document.getElementById("myBtn6");
+
+  		if (dots.style.display === "none") {
+    	dots.style.display = "inline";
+    	btnText.innerHTML = "Read more"; 
+    	moreText.style.display = "none";
+  		} else {
+    	dots.style.display = "none";
+    	btnText.innerHTML = "Read less"; 
+    	moreText.style.display = "inline";
+  			}
+		}
+
+
+
+	</script>
+
+</head>
+<body>
+
+
+  <marquee scrollamount="2" class="marqueeTxt">As per the GOI circular on price capping of Orthopaedic Knee implant by NPPA(National Pharmaceutical Pricing Authority), new prices of knee implants have been implemented effective 16th August 2017. For details on knee implant pricing across our hospitals. | As per GOI’s circular dated 02nd April 2018 on price-capping of stents by NPPA(National Pharmaceutical Pricing Authority), new prices of coronary stents are revised with effect from 01st April, 2018. For details on stent pricing.</marquee>
+    
+    <img src="http://i68.tinypic.com/okbsjm.png" border="0" alt="Image and video hosting by TinyPic" style="margin: 20px 100px">
+    <div style="float:right; padding-right: 40px; padding-top:40px;">
+    <div align="justify" ><!-- Trigger/Open The Modal -->
+
+    <button style="height: 50px;font-size:20px;color: white;background-color:#39b54a;" id="myBtn">Emergency Contact Numbers</button><br><br>
+    <div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div style="font-size: 30px;">
+    <p align="middle" style="font-size: 30px;font-family:Josefin Sans;color: #39b54a;">EMERGENCY CONTACT NUMBERS</p>
+      <table border="3" bordercolor="green" cellpadding="10" cellspacing="2" align="center" >
+        <tr align="center">
+            <td><b>Place</b></td>
+            <td><b>Number</b></td>
+        </tr>
+        <tr align="center">
+            <td>California</td>
+            <td>105010</td>
+        </tr>
+        <tr align="center">
+            <td>Seattle</td>
+            <td>080-23004150</td>
+        </tr>
+        <tr align="center">
+            <td>Las Vegas</td>
+            <td>080-23014444</td>
+        </tr>
+        <tr align="center">
+            <td>Colorado</td>
+            <td>022-41114111</td>
+        </tr>
+        <tr align="center">
+            <td>Washington DC</td>
+            <td>044-49334933</td>
+        </tr>
+        <tr align="center">
+            <td>Los Angeles</td>
+            <td>01892242560</td>
+        </tr>
+        <tr align="center">
+            <td>Pennysylvania</td>
+            <td>0120 - 2400444</td>
+
+        </tr>
+        <tr align="center">
+            <td>Texas</td>
+            <td>0124 - 4213333</td>
+        </tr>
+        <tr align="center">
+            <td>Arizona</td>
+            <td>011-42254000</td>
+        </tr>
+        <tr align="center">
+            <td>New York</td>
+            <td>088 28074040</td>
+        </tr>
+
+    </table><br><br></p>
+  </div>
+</div>
+</div>
+</div>
+
+    </div>
+
+
+
+
+<div class="bs-example">
+    <nav id="myNavbar" class="navbar navbar-default" role="navigation" style="background-color: #39b54a;">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand"><font color="white">Grey's</font></a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="first.html"><font color="white">Home</font></a></li>
+                    <li><a href="about.html"><font color="white">About</font></a></li>
+                    <li class="dropdown">
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle"><font color="white">Specialities</font><b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="cardio.html">Cardiology</a></li>
+                            <li><a href="neuro.html">Neurology</a></li>
+                            <li><a href="general.html">General Surgery</a></li>
+                            <li><a href="pediatrics.html">Pediatrics</a></li>
+                            <li><a href="plastic.html">Plastic Surgery</a></li>
+                            <li><a href="ortho.html">Orthopaedics</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="faq.html"><font color="white">Enquiries</font></a></li>
+                    <li><a href="app.php"><font color="white">Request an Appointment</font></a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle"><font color="white">Health Calculators</font> <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="bmi1.php">BMI Calculator</a></li>
+                            <li><a href="http://localhost/php/duedate1.php">Due date Calculator</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div>
+    </nav>
+</div><br><br><br><br>
+
+	<div class="container">
+		
+		<div class="col-xs-12 col-sm-12 col-md-12">
+			<h2 id="neurohead">Neurology</h2>
+			<hr color="#39b54a" size="5">
+		</div>
+		
+		<div class="col-xs-12 col-sm-6 col-md-12">
+
+			<div class="col-xs-12 col-sm-12 col-md-4">
+			<img src="neurology.jpg" alt="neurology">
+			</div>
+			
+			<div class="col-xs-12 col-sm-12 col-md-4">
+			<p id=neuropara>The Department of Neurology is committed to integrating their exceptional medical expertise, technology and innovation to offer best in class treatments. The department provides treatment for people with neurological disorders such as Parkinson’s, stroke, epilepsy, diagnosis and treatment of paralytic disorders, sleep disorders, multidisciplinary assessment and management of multiple sclerosis, and headaches. The department is staffed leading panel of surgeons, doctors and nursing staff who offer cutting-edge diagnosis using the latest neuroimaging techniques.</p>
+			<br><br><br><br><br>
+			</div>
+		</div>
+		
+
+		<div class="col-xs-12 col-sm-12 col-md-12">
+			<h3 id="neurohead">Neurology: Top Medical Procedures</h3>
+			<hr color="#39b54a">
+		</div>
+
+
+		<div class="grid-container">
+  			<div class="item1" >
+  				<h3 id="neurohead">Canalith repositioning procedure</h3>
+				<p>The canalith repositioning procedure is performed to move the symptom-causing otoconia from the<span id="dots1">...</span><span id="more1"> fluid-filled semicircular canals of your inner ear into a tiny bag-like open area (vestibule) that houses one of the otolith organs (utricle) in your ear. Once there, these particles won't cause vertigo and will likely be reabsorbed by bodily fluids in your ear</span></p>
+				<p><button onclick="readmore1()" id="myBtn1" style="background-color:#39b54a">Read more</button></p>
+  			</div>
+  			
+  			<div class="item2">
+  				<h3 id="neurohead">EEG (electroencephalogram)</h3>
+  				<p>An electroencephalogram (EEG) is a test that detects electrical activity in your brain using small, flat metal discs (electrodes)<span id="dots2">...</span><span id="more2"> attached to your scalp. Your brain cells communicate via electrical impulses and are active all the time, even when you're asleep. This activity shows up as wavy lines on an EEG recording.</span></p>
+  				<p><button onclick="readmore2()" id="myBtn2" style="background-color:#39b54a">Read more</button></p>
+  			</div>
+  			
+  			<div class="item3" >
+  				<h3 id="neurohead">Electromyography (EMG)</h3>
+				<p>Electromyography (EMG) is a diagnostic procedure to assess the health of muscles and the nerve cells that control them (motor neurons).Motor neurons<span id="dots3">...</span><span id="more3">  transmit electrical signals that cause muscles to contract. An EMG translates these signals into graphs, sounds or numerical values that a specialist interprets.</span></p>
+				<p><button onclick="readmore3()" id="myBtn3" style="background-color:#39b54a">Read more</button></p>
+  			</div>  
+  			
+  			<div class="item4">
+  				<h3 id="neurohead">Lumbar puncture (spinal tap)</h3>
+  				<p>Lumbar puncture (spinal tap) is performed in your lower back, in the lumbar region. During lumbar puncture, a needle<span id="dots4">...</span><span id="more4"> is inserted between two lumbar bones (vertebrae) to remove a sample of cerebrospinal fluid — the fluid that surrounds your brain and spinal cord to protect them from injury</span></p>
+  				<p><button onclick="readmore4()" id="myBtn4" style="background-color:#39b54a">Read more</button></p>
+  			</div>
+  			
+  			<div class="item5">
+  				<h3 id="neurohead">Radiofrequency neurotomy</h3>
+  				<p>Radiofrequency neurotomy is a procedure to reduce back and neck pain. Heat generated by radio waves is used to target specific nerves<span id="dots5">...</span><span id="more5"> and temporarily interfere with their ability to transmit pain signals.</span></p>
+  				<p><button onclick="readmore5()" id="myBtn5" style="background-color:#39b54a">Read more</button></p>
+  			</div>
+
+  			<div class="item6">
+  				<h3 id="neurohead">Tilt table test</h3>
+  				<p>A tilt table test is used to evaluate the cause of unexplained fainting (syncope). During a tilt table test, you lie on a table that moves from a horizontal to a vertical position.<span id="dots6">...</span><span id="more6"> Your heart rate and blood pressure are monitored throughout the tilt table test.</span></p>
+  				<p><button onclick="readmore6()" id="myBtn6" style="background-color:#39b54a">Read more</button></p>
+  			</div>
+  			
+		</div>
+		<br><br><br><br><br>
+
+
+		<div class="col-xs-12 col-sm-12 col-md-12">
+			<h3 id="neurohead">Specialists</h3>
+			<hr color="#39b54a">
+		</div>
+
+
+
+		<div class="row">
+ 			<div class="column">
+    			<div class="card">
+     				<img src="derek.jpg" alt="Derek Shepherd" height="500px" style="width:100%">
+     				<div class="container">
+        				<h3 style="color:#39b54a">Derek Shepherd</h3>
+        				<p class="title">Director of Neurosurgery</p>
+        				<p>M.D., F.A.C.S.</p>
+        				<p>derek@greys.com</p>
+        				<p><button class="button">Contact</button></p>
+      				</div>
+    			</div>
+  			</div>
+
+ 			<div class="column">
+    			<div class="card">
+      				<img src="amelia.jpg" alt="Amelia Shepherd" height="500px" style="width:100%">
+      				<div class="container">
+        				<h3 style="color:#39b54a">Amelia Shepherd</h3>
+        				<p class="title">Head of Neurosurgery</p>
+        				<p>M.D., F.A.C.S.</p>
+        				<p>amelia@greys.com</p>
+        				<p><button class="button">Contact</button></p>
+      				</div>
+    			</div>
+  			</div>
+
+  			<div class="column">
+    			<div class="card">
+      				<img src="stephanie.jpg" alt="Stephanie Edwards" height="500px" style="width:100%">
+     				<div class="container">
+        				<h3 style="color:#39b54a">Stephanie Edwards</h3>
+        				<p class="title">Neurosurgical Resident</p>
+        				<p>M.D.</p>
+        				<p>stephanie@greys.com</p>
+        				<p><button class="button">Contact</button></p>
+      				</div>
+    			</div>
+  			</div>
+		</div>
+
+
+		<footer>
+  <div style="padding:20px";>
+    <hr style="color: #39b54a;width: 20;">
+  <p>SITE LINKS</p>
+  <p><a href="about.html">About</a></p>
+  <p><a href="faq.html">FAQ</a></p>
+  <p><a href="app.php">Request an Appointment</a></p>
+
+  <div style="float: right">
+    <p size="6">Copyright © 2018 Grey's Health System</p></div>
+
+</footer>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

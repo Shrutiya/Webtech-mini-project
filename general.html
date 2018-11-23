@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>General Surgery</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="intro.css">
+	<style>
+		#generalhead{
+			font-family: "Josefin Sans";
+			color: #39b54a;
+		}
+
+		#generalpara{
+			font-size: 16px;
+		}
+
+		.grid-container {
+			display: grid;
+ 			grid-template-columns: auto auto auto;
+ 			grid-gap: 10px;
+ 			background-color: #39b54a;
+ 			padding: 10px;
+		}
+		.grid-container>div {
+  			background-color: rgba(255, 255, 255,1);
+			text-align: center ;
+ 			padding:25px;
+ 			font-size: 16px;
+		}
+
+		#more1{
+			display: none;
+		}
+
+		#more2{
+			display: none;
+		}
+
+		#more3{
+			display: none;
+		}
+
+		#more4{
+			display: none;
+		}
+
+		#more5{
+			display: none;
+		}
+
+		#more6{
+			display: none;
+		}
+
+		#myBtn1{
+			color: #ffffff;
+		}
+
+		#myBtn2{
+			color: #ffffff;
+		}
+
+		#myBtn3{
+			color: #ffffff;
+		}
+
+		#myBtn4{
+			color: #ffffff;
+		}
+
+		#myBtn5{
+			color: #ffffff;
+		}
+
+		#myBtn6{
+			color: #ffffff;
+		}
+
+		.column {
+    		float: left;
+   			width: 33.3%;
+    		margin-bottom: 16px;
+    		padding: 20px 8px;
+		}
+
+
+		@media screen and (max-width: 650px) {
+    		.column {
+        		width: 100%;
+        		display: block;
+    		}
+		}
+
+
+		.card {
+    		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+		}
+
+
+		.container {
+    		padding: 0 16px;
+		}
+
+
+		.container::after, .row::after {
+    		content: "";
+    		clear: both;
+    		display: table;
+		}
+
+		.title {
+    		color: grey;
+		}
+
+		.button {
+			background: #39b54a; 
+    		color: #ffffff ;
+    	}
+
+
+
+	</style>
+
+	
+
+
+	<script>
+
+		function readmore1() {
+  		var dots = document.getElementById("dots1");
+  		var moreText = document.getElementById("more1");
+  		var btnText = document.getElementById("myBtn1");
+
+  		if (dots.style.display === "none") {
+    	dots.style.display = "inline";
+    	btnText.innerHTML = "Read more"; 
+    	moreText.style.display = "none";
+  		} else {
+    	dots.style.display = "none";
+    	btnText.innerHTML = "Read less"; 
+    	moreText.style.display = "inline";
+  			}
+		}
+
+		function readmore2() {
+  		var dots = document.getElementById("dots2");
+  		var moreText = document.getElementById("more2");
+  		var btnText = document.getElementById("myBtn2");
+
+  		if (dots.style.display === "none") {
+    	dots.style.display = "inline";
+    	btnText.innerHTML = "Read more"; 
+    	moreText.style.display = "none";
+  		} else {
+    	dots.style.display = "none";
+    	btnText.innerHTML = "Read less"; 
+    	moreText.style.display = "inline";
+  			}
+		}
+
+		function readmore3() {
+  		var dots = document.getElementById("dots3");
+  		var moreText = document.getElementById("more3");
+  		var btnText = document.getElementById("myBtn3");
+
+  		if (dots.style.display === "none") {
+    	dots.style.display = "inline";
+    	btnText.innerHTML = "Read more"; 
+    	moreText.style.display = "none";
+  		} else {
+    	dots.style.display = "none";
+    	btnText.innerHTML = "Read less"; 
+    	moreText.style.display = "inline";
+  			}
+		}
+
+		function readmore4() {
+  		var dots = document.getElementById("dots4");
+  		var moreText = document.getElementById("more4");
+  		var btnText = document.getElementById("myBtn4");
+
+  		if (dots.style.display === "none") {
+    	dots.style.display = "inline";
+    	btnText.innerHTML = "Read more"; 
+    	moreText.style.display = "none";
+  		} else {
+    	dots.style.display = "none";
+    	btnText.innerHTML = "Read less"; 
+    	moreText.style.display = "inline";
+  			}
+		}
+
+		function readmore5() {
+  		var dots = document.getElementById("dots5");
+  		var moreText = document.getElementById("more5");
+  		var btnText = document.getElementById("myBtn5");
+
+  		if (dots.style.display === "none") {
+    	dots.style.display = "inline";
+    	btnText.innerHTML = "Read more"; 
+    	moreText.style.display = "none";
+  		} else {
+    	dots.style.display = "none";
+    	btnText.innerHTML = "Read less"; 
+    	moreText.style.display = "inline";
+  			}
+		}
+
+		function readmore6() {
+  		var dots = document.getElementById("dots6");
+  		var moreText = document.getElementById("more6");
+  		var btnText = document.getElementById("myBtn6");
+
+  		if (dots.style.display === "none") {
+    	dots.style.display = "inline";
+    	btnText.innerHTML = "Read more"; 
+    	moreText.style.display = "none";
+  		} else {
+    	dots.style.display = "none";
+    	btnText.innerHTML = "Read less"; 
+    	moreText.style.display = "inline";
+  			}
+		}
+
+
+
+	</script>
+
+</head>
+<body>
+
+
+    <marquee scrollamount="2" class="marqueeTxt">As per the GOI circular on price capping of Orthopaedic Knee implant by NPPA(National Pharmaceutical Pricing Authority), new prices of knee implants have been implemented effective 16th August 2017. For details on knee implant pricing across our hospitals. | As per GOI’s circular dated 02nd April 2018 on price-capping of stents by NPPA(National Pharmaceutical Pricing Authority), new prices of coronary stents are revised with effect from 01st April, 2018. For details on stent pricing.</marquee>
+    
+    <img src="http://i68.tinypic.com/okbsjm.png" border="0" alt="Image and video hosting by TinyPic" style="margin: 20px 100px">
+    <div style="float:right; padding-right: 40px; padding-top:40px;">
+    <div align="justify" ><!-- Trigger/Open The Modal -->
+
+    <button style="height: 50px;font-size:20px;color: white;background-color:#39b54a;" id="myBtn">Emergency Contact Numbers</button><br><br>
+    <div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div style="font-size: 30px;">
+    <p align="middle" style="font-size: 30px;font-family:Josefin Sans;color: #39b54a;">EMERGENCY CONTACT NUMBERS</p>
+      <table border="3" bordercolor="green" cellpadding="10" cellspacing="2" align="center" >
+        <tr align="center">
+            <td><b>Place</b></td>
+            <td><b>Number</b></td>
+        </tr>
+        <tr align="center">
+            <td>California</td>
+            <td>105010</td>
+        </tr>
+        <tr align="center">
+            <td>Seattle</td>
+            <td>080-23004150</td>
+        </tr>
+        <tr align="center">
+            <td>Las Vegas</td>
+            <td>080-23014444</td>
+        </tr>
+        <tr align="center">
+            <td>Colorado</td>
+            <td>022-41114111</td>
+        </tr>
+        <tr align="center">
+            <td>Washington DC</td>
+            <td>044-49334933</td>
+        </tr>
+        <tr align="center">
+            <td>Los Angeles</td>
+            <td>01892242560</td>
+        </tr>
+        <tr align="center">
+            <td>Pennysylvania</td>
+            <td>0120 - 2400444</td>
+
+        </tr>
+        <tr align="center">
+            <td>Texas</td>
+            <td>0124 - 4213333</td>
+        </tr>
+        <tr align="center">
+            <td>Arizona</td>
+            <td>011-42254000</td>
+        </tr>
+        <tr align="center">
+            <td>New York</td>
+            <td>088 28074040</td>
+        </tr>
+
+    </table><br><br></p>
+  </div>
+</div>
+</div>
+</div>
+
+    </div>
+
+
+
+
+<div class="bs-example">
+    <nav id="myNavbar" class="navbar navbar-default" role="navigation" style="background-color: #39b54a;">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand"><font color="white">Grey's</font></a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="first.html"><font color="white">Home</font></a></li>
+                    <li><a href="about.html"><font color="white">About</font></a></li>
+                    <li class="dropdown">
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle"><font color="white">Specialities</font><b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="cardio.html">Cardiology</a></li>
+                            <li><a href="neuro.html">Neurology</a></li>
+                            <li><a href="general.html">General Surgery</a></li>
+                            <li><a href="pediatrics.html">Pediatrics</a></li>
+                            <li><a href="plastic.html">Plastic Surgery</a></li>
+                            <li><a href="ortho.html">Orthopaedics</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="faq.html"><font color="white">Enquiries</font></a></li>
+                    <li><a href="app.php"><font color="white">Request an Appointment</font></a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle"><font color="white">Health Calculators</font> <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="bmi1.php">BMI Calculator</a></li>
+                            <li><a href="http://localhost/php/duedate1.php">Due date Calculator</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div>
+    </nav>
+</div><br><br><br><br>
+
+
+
+	<div class="container">
+		
+		<div class="col-xs-12 col-sm-12 col-md-12">
+			<h2 id="generalhead">Neal Surgery</h2>
+			<hr color="#39b54a" size="5">
+		</div>
+		
+		<div class="col-xs-12 col-sm-6 col-md-12">
+
+			<div class="col-xs-12 col-sm-12 col-md-4">
+			<img src="general.jpg" alt="general surgery" width="90%">
+			</div>
+			
+			<div class="col-xs-12 col-sm-12 col-md-4">
+			<p id=generalpara>The General Surgery Department is equipped with the latest technology and infrastructure, supported by an experienced team of surgeons. The department specialises in performing all major surgeries involving abdomen, skin, breast, soft tissues, and hernia. It is widely used in gynaecology, gastroenterology and urology. Patients receive specialised assessment, latest treatments along with clinical post-operative care, medications and a regular follow-up.</p>
+			<br><br><br><br><br>
+			</div>
+		</div>
+		
+
+		<div class="col-xs-12 col-sm-12 col-md-12">
+			<h3 id="generalhead">General Surgery: Top Medical Procedures</h3>
+			<hr color="#39b54a">
+		</div>
+
+
+		<div class="grid-container">
+  			<div class="item1" >
+  				<h3 id="generalhead">Cholecystectomy (gallbladder removal)</h3>
+				<p>Cholecystectomy (koh-luh-sis-TEK-tuh-me) is a surgical procedure to remove your gallbladder — a pear-shaped organ that sits<span id="dots1">...</span><span id="more1"> just below your liver on the upper right side of your abdomen. Your gallbladder collects and stores bile — a digestive fluid produced in your liver.</span></p>
+				<p><button onclick="readmore1()" id="myBtn1" style="background-color:#39b54a">Read more</button></p>
+  			</div>
+  			
+  			<div class="item2">
+  				<h3 id="generalhead">Myomectomy</h3>
+  				<p>Myomectomy (my-o-MEK-tuh-mee) is a surgical procedure to remove uterine fibroids — also called leiomyomas (lie-o-my-O-muhs).<span id="dots2">...</span><span id="more2"> These are common noncancerous growths that appear in the uterus, usually during childbearing years, but they can occur at any age.</span></p>
+  				<p><button onclick="readmore2()" id="myBtn2" style="background-color:#39b54a">Read more</button></p>
+  			</div>
+  			
+  			<div class="item3" >
+  				<h3 id="generalhead">Needle biopsy</h3>
+				<p>A needle biopsy is a procedure to obtain a sample of cells from your body for laboratory testing. Common needle biopsy procedures include<span id="dots3">...</span><span id="more3"> fine-needle aspiration and core needle biopsy. Needle biopsy may be used to take tissue or fluid samples from muscles, bones and organs, such as the liver or lungs</span></p>
+				<p><button onclick="readmore3()" id="myBtn3" style="background-color:#39b54a">Read more</button></p>
+  			</div>  
+  			
+  			<div class="item4">
+  				<h3 id="generalhead">Rectal prolapse surgery</h3>
+  				<p>Rectal prolapse surgery is a procedure to repair rectal prolapse. Rectal prolapse occurs when the last several inches of the large intestine<span id="dots4">...</span><span id="more4"> (the rectum) becomes abnormally stretched and protrudes from the anus. Rectal prolapse surgery moves the rectum back to its proper place.</span></p>
+  				<p><button onclick="readmore4()" id="myBtn4" style="background-color:#39b54a">Read more</button></p>
+  			</div>
+  			
+  			<div class="item5">
+  				<h3 id="generalhead">Thyroidectomy</h3>
+  				<p>Thyroidectomy is the removal of all or part of your thyroid gland. Your thyroid is a butterfly-shaped gland located at the base of<span id="dots5">...</span><span id="more5"> your neck. It produces hormones that regulate every aspect of your metabolism, from your heart rate to how quickly you burn calories.</span></p>
+  				<p><button onclick="readmore5()" id="myBtn5" style="background-color:#39b54a">Read more</button></p>
+  			</div>
+
+  			<div class="item6">
+  				<h3 id="generalhead">Vasectomy</h3>
+  				<p>Vasectomy is a form of male birth control that cuts the supply of sperm to your semen. It's done by cutting and sealing the tubes that carry<span id="dots6">...</span><span id="more6"> sperm. Vasectomy has a low risk of problems and can usually be performed in an outpatient setting under local anesthesia. </span></p>
+  				<p><button onclick="readmore6()" id="myBtn6" style="background-color:#39b54a">Read more</button></p>
+  			</div>
+  			
+		</div>
+		<br><br><br><br><br>
+
+
+		<div class="col-xs-12 col-sm-12 col-md-12">
+			<h3 id="generalhead">Specialists</h3>
+			<hr color="#39b54a">
+		</div>
+
+
+
+		<div class="row">
+ 			<div class="column">
+    			<div class="card">
+     				<img src="meredith.jpg" alt="Meredith Grey" height="500px" style="width:100%">
+     				<div class="container">
+        				<h3 style="color:#39b54a">Meredith Grey</h3>
+        				<p class="title">Head of General surgery</p>
+        				<p>M.D., F.A.C.S.</p>
+        				<p>meredith@greys.com</p>
+        				<p><button class="button">Contact</button></p>
+      				</div>
+    			</div>
+  			</div>
+
+ 			<div class="column">
+    			<div class="card">
+      				<img src="richard.jpg" alt="Richard Webber" height="500px" style="width:100%">
+      				<div class="container">
+        				<h3 style="color:#39b54a">Richard Webber</h3>
+        				<p class="title">Attending General Surgeon</p>
+        				<p>M.D., F.A.C.S.</p>
+        				<p>richard@greys.com</p>
+        				<p><button class="button">Contact</button></p>
+      				</div>
+    			</div>
+  			</div>
+
+  			<div class="column">
+    			<div class="card">
+      				<img src="miranda.jpg" alt="Miranda Bailey" height="500px" style="width:100%">
+     				<div class="container">
+        				<h3 style="color:#39b54a">Miranda Bailey</h3>
+        				<p class="title">Chief of surgery</p>
+        				<p>M.D., F.A.C.S.</p>
+        				<p>miranda@greys.com</p>
+        				<p><button class="button">Contact</button></p>
+      				</div>
+    			</div>
+  			</div>
+		</div>
+
+
+		
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+
+  <footer>
+  <div style="padding:20px";>
+    <hr style="color: #39b54a;width: 20;">
+  <p>SITE LINKS</p>
+  <p><a href="about.html">About</a></p>
+  <p><a href="faq.html">FAQ</a></p>
+  <p><a href="app.php">Request an Appointment</a></p>
+
+  <div style="float: right">
+    <p size="6">Copyright © 2018 Grey's Health System</p></div>
+
+</footer>
+</body>
+</html>
